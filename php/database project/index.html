@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serwis Komputerowy</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo_florczak.png" type="image/x-icon">
+</head>
+<body>
+        <header>
+            <section id="logo-container">
+                <img id="logo" src="img/logo_florczak.png" alt="logo firmy">
+            </section>
+            <section id="highline">
+                Serwis Komputerowy Florczak
+            </section>
+            <section id="helper">
+                <div id="vessel">
+                    <img class="helpers" title="pomoc" id="access" src="img/accessible_FILL0_wght400_GRAD0_opsz48.png" alt="ułatwienia dla niepełnosprawnych">
+                    <img class="helpers" title="menu" id="menu-btn" onclick="openNav()" src="img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="menu">
+                    <a href="log.php"><img title="zaloguj" class="helpers" id="account" src="img/account_circle_FILL0_wght400_GRAD0_opsz48.png" alt="Konto"></a>    
+                </div>
+                <div id="option" >
+                    <div id="option-content" >
+                        <div id="bigger" class="options">Powiększ tekst A+</div>
+                        <div id="smaller" class="options">Pomniejsz tekst A-</div>
+                        <div id="colors" class="options">Kontrast żółto-czarny</div>
+                    </div>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="index.html">Strona główna</a>
+                        <a href="cennik.php">Cennik</a>
+                        <a href="kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </section>     
+        </header>
+
+    <section class="text">
+        <section id="describe">
+            <span id="ftitle">O naszej firmie</span><br>
+            <span class="ltitle">Jesteśmy w sumie ok</span>
+            <p class="paragraph">Od lat jestem co prawda copywriterem, jednak branża IT, a w szczególności komputery są moją nieprzerwaną pasją od ponad 2 dekad. W tym czasie złożyłem już wiele komputerów stacjonarnych, rozwiązałem też setki różnorakich problemów sprzętowych jak i tych związanych z programowaniem. </p>
+            <a href="cennik.php"><button class="btn">Sprawdź cennik</button></a>
+            <a href="tel:+48733147720"><button class="btn">Zadzwoń do nas</button></a>
+        </section>
+        <section id="mac">
+            <img id="laptop" src="img/imac.jpg" alt="Obraz laptopa">
+        </section>
+    </section>
+
+    <section id="opinions">
+        <div class="op-container">
+            <div><img id="set" src="img/star_rate_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>Orginalne części</span></div>
+        </div>
+        <div class="op-container">
+            <div><img id="express" src="img/speed_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>Ekspresowe naprawy</span></div>
+        </div>
+        <div class="op-container">
+            <div><img id="year" src="img/verified_user_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>1 rok gwarancji</span></div>
+        </div>
+        <div class="op-container">
+            <div><img id="customer" src="img/auto_awesome_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>5k zadowolonych klientów</span></div>
+        </div>
+    </section>
+    <section class="text1">
+        <section id="describe2">
+            <span id="ftitle">Twoje urządzenie uległo awarii?</span><br>
+            <span class="ltitle">Naprawiamy nawet najbardziej skomplikowane usterki</span>
+        </section>
+        <section id="device">
+            <a href="cennik.php"><div class="devices"><img src="img/laptop_mac_FILL0_wght400_GRAD0_opsz48.png" alt="laptop"><br>Serwis Laptopów</div></a>
+            <a href="cennik.php"><div class="devices"><img src="img/dvr_FILL0_wght400_GRAD0_opsz48.png" alt="Komputer"> <br> Serwis Komputerów</div></a>
+            <a href="cennik.php"><div class="devices"><img src="img/stadia_controller_FILL0_wght400_GRAD0_opsz48.png" alt="Kontroler"> Serwis Konsol</div></a>
+            <a href="cennik.php"><div class="devices"><img src="img/storage_FILL0_wght400_GRAD0_opsz48.png" alt="Pamięć"> Odzyskiwanie danych</div></a>
+        </section>
+    </section>
+
+    <section class="text3">
+        <section id="freeofcharge">   
+            <span id="ftitle">Darmowa diagnoza 0zł!</span><br>
+            <span class="ltitle">Za sprawdzenie nie zapłacisz NIC!</span>
+            <p>Decydując się na pozostawienie urządzenia u nas musisz wiedzieć, że zanim wykonamy jakiejkolwiek naprawy poinformujemy Cię o wszystkich możliwych kosztach z nią związanych. <b>Proces diagnozy jest bezpłatny!</b></p>
+            <a href="cennik.php"><button class="btn">Sprawdź cennik</button></a>
+        </section>
+        <section id="person">
+            <img src="img/calltofloras.png" alt="Saul Goodman">
+        </section>
+    </section>
+    
+    <footer>
+        &copy; Serwis Komputerowy Floraczak 2023
+    </footer>
+</body>
+</html>

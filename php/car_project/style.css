@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(231, 231, 237);
+  color: white;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.branch-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+img{
+  width: 50vw;
+}
+
+.words{
+  text-align: center;
+  font-size: 50px;
+}
+
+#name{
+  color: #2196F3;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.img-container{
+  animation: up-down ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.paragraph{
+  padding: 5px;
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+h2{
+  font-size: 100px;
+  text-transform: uppercase;
+
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 444;
+}
+
+.dropdown{
+  overflow-y: hidden;
+  transition: 0.5s;
+  height: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+@keyframes up-down {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(40px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

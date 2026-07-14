@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serwis Komputerowy</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo_florczak.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section id="logo-container">
+            <img id="logo" src="img/logo_florczak.png" alt="logo firmy">
+        </section>
+        <section id="highline">
+            Serwis Komputerowy Florczak
+        </section>
+        <section id="helper">
+            <div id="vessel">
+                <img class="helpers" id="access" src="img/accessible_FILL0_wght400_GRAD0_opsz48.png" alt="ułatwienia dla niepełnosprawnych">
+                <img class="helpers" id="menu-btn" onclick="openNav()" src="img/menu_FILL0_wght400_GRAD0_opsz48.png" alt="menu">
+                <a href="log.php"><img class="helpers" id="account" src="img/account_circle_FILL0_wght400_GRAD0_opsz48.png" alt="Konto"></a>    
+            </div>
+            <div id="option" >
+                <div id="option-content" >
+                    <div id="bigger" class="options">Powiększ tekst A+</div>
+                    <div id="smaller" class="options">Pomniejsz tekst A-</div>
+                    <div id="colors" class="options">Kontrast żółto-czarny</div>
+                </div>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Strona główna</a>
+                    <a href="cennik.php">Cennik</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+        </section>     
+    </header>
+
+    <section class="text">
+        <section id="describe">
+            <span style="font-weight: 900;" class="ltitle">Kontakt</span><br>
+            <span id="ftitle">Adresy oddziałów:</span>
+            <p class="paragraph">Sienkiewicza 10, 35-306 Krosno</p>
+            <p class="paragraph">Krakowska 40, 31-555 Rzeszów</p>
+            <p class="paragraph">Bieszczadzka 19, 33-284 Sanok</p>
+            <p class="paragraph">Maczka 4, 32-754 Tarnów</p>
+            <span id="ftitle">Godziny otwarcia:</span>
+            <p class="paragraph">pon - pt: 09:00 - 17:00</p>
+            <p class="paragraph">sob - niedz: 10:00 - 15:00</p>
+            <span id="ftitle">Dane kontaktowe:</span>
+            <p class="paragraph">Mail: bigflorczak@serwis.florczak.pl</p>
+            <p class="paragraph">Tel: +48 733147720</p>
+        </section>
+        <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.0166504150861!2d21.715641205690098!3d49.719290233127865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473c4ec102854e01%3A0x5c5d27c9bc31e06!2zWmVzcMOzxYIgU3prw7PFgiBFbGVrdHJ5Y3pueWNoIGkgT2fDs2xub2tzenRhxYJjxIVjeWNoIHcgS3JvxZtuaWU!5e0!3m2!1spl!2spl!4v1676795588732!5m2!1spl!2spl" id="map" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </section>
+    </section>
+
+    <section id="opinions">
+        <div class="op-container">
+            <div><img id="set" src="img/star_rate_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>Orginalne części</span></div>
+        </div>
+        <div class="op-container">
+            <div><img id="express" src="img/speed_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>Ekspresowe naprawy</span></div>
+        </div>
+        <div class="op-container">
+            <div><img id="year" src="img/verified_user_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>1 rok gwarancji</span></div>
+        </div>
+        <div class="op-container">
+            <div><img id="customer" src="img/auto_awesome_FILL0_wght400_GRAD0_opsz48.png" alt="oceny"></div>
+            <div class="op"><span>5k zadowolonych klientów</span></div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; Serwis Komputerowy Floraczak 2023
+    </footer>   
+</body>
+</html>

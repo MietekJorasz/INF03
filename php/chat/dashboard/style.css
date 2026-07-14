@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+::-webkit-scrollbar {
+    width: 12px; /* Szerokość paska przewijania */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Kolor kciuka paska przewijania */
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Kolor kciuka paska przewijania po najechaniu myszą */
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+html, body{
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+::selection{
+    background-color: white;
+    color: black;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav#side{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #151515;
+    color: white;
+    width: 60px;
+    height: calc(100% - 20px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#viaLogo{
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    padding: 10px 0 0 0;
+}
+
+#links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+#links>div{
+    cursor: pointer;
+}
+
+#post{
+    position: relative;
+    bottom: 10px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#profileLogo{
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(to left,#ef3fae,#59397e);
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#dropdown{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    bottom: 65px;
+    left: 20px;
+    background-color: #151515;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 100px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 1);
+}
+
+.item{
+   padding: 10px 0;
+   opacity: 0.8;
+}
+
+.item:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#profileLogo>img{
+    border-radius: 100%;
+}
+
+main{
+    width: calc(100% - 60px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 10px;
+}
+
+#friendsList{
+    width: 30%;
+    height: calc(100% - 20px);
+    border-radius: 10px 0 0 10px;
+    margin: 0 0 0 20px;
+    background-color: #151515;
+    overflow: auto;
+    -webkit-box-shadow: 8px 2px 20px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 2px 20px -7px rgba(0, 0, 0, 1);
+    box-shadow: 8px 2px 20px -7px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+#openChat{
+    width: calc(70% - 30px);
+    background-color: #151515;
+    height: calc(100% - 20px);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    z-index: 0;
+}
+
+#topBar{
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    -webkit-box-shadow: 0px 1px 24px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 1px 24px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 1px 24px 1px rgba(0, 0, 0, 1);
+    padding: 10px;
+}
+
+#iconsCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+#nickSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#header{
+    padding: 15px;
+}
+
+h2{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 0;
+}
+
+#searchCon{
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#icon{
+    color: #777;
+    z-index: 3;
+    margin-left: 5px;
+}
+
+#searchBorder{
+    width: 100%;
+    position: relative;
+    right: 30px;
+    border-radius: 18px;
+    background: linear-gradient(to left,#ef3fae,#59397e);
+    height: 30px;
+    padding: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search, #message, #add{
+    width: 100%;
+    border-radius: 18px;
+    background-color: #151515;
+    border: 0;
+    height: 30px;
+    padding: 0 30px;
+    color: white;
+    font-size: 20px;
+}
+
+#message{
+    padding: 0 15px !important;
+}
+
+#chatCard, #chatCardB{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#chatCardB{
+    width: 100%;
+    justify-content: space-between;
+    cursor:auto !important;
+}
+
+.friendsLogo{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(to left,#ef3fae,#59397e);
+    border-radius: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+}
+
+.cardTitle{
+    color: white;
+    font-weight: bold;
+}
+
+.cardLastMessage{
+    color: #777;
+}
+
+#chatCard:hover, #chatCardB:hover{
+    background-color: #222;
+}
+
+#headerChat{
+    display: flex;
+    justify-content: space-between;
+}
+
+#messageCon{
+    overflow: auto;
+    height: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.messageFormCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 1px 24px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 1px 24px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 1px 24px 1px rgba(0, 0, 0, 1);
+    padding: 10px;
+    gap: 10px;
+}
+
+#rightMessage{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0 ;
+}
+
+#leftMessage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#messageBorder{
+    width: fit-content;
+    background: linear-gradient(to left,#ef3fae,#59397e);
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+#writeBorder, #addBorder{
+    width: 100%;
+    border-radius: 18px;
+    background: linear-gradient(to left,#ef3fae,#59397e);
+    height: 30px;
+    padding: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#writeBorder>input{
+    width: 100%;
+}
+
+#send{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#welcome{
+    margin: auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    
+}
+
+#welcome>h2{
+    text-transform: capitalize;
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+    text-align: left;
+}
+
+#welcome>p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#messageInfo{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+h4{
+    color: #777;
+    margin: 0;
+}

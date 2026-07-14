@@ -1,0 +1,86 @@
+
+.formCon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 2px 5px 24px 0px  gray;
+    -moz-box-shadow: 2px 5px 24px 0px  gray;
+    box-shadow: 2px 5px 24px 0px gray;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+img{
+    width: 40vw;
+}
+.w3-panel, .w3-red, .w3-display-container{
+    margin: 0;
+}
+.img{
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 1200px) {
+    .formCon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65vw;
+        -webkit-box-shadow: 2px 5px 24px 0px  gray;
+        -moz-box-shadow: 2px 5px 24px 0px  gray;
+        box-shadow: 2px 5px 24px 0px gray;
+    }
+    h2{
+        font-size: 35px;
+    }
+    label, input[type = submit]{
+        font-size: 3.5vw;
+    }
+    input[type = text], input[type = password]{
+        height: 3.5vh;
+        font-size: 3vw;
+    }
+    img{
+        width: 60vw;
+    }
+    .img{
+        width: 65vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .formCon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        -webkit-box-shadow: 2px 5px 24px 0px  gray;
+        -moz-box-shadow: 2px 5px 24px 0px  gray;
+        box-shadow: 2px 5px 24px 0px gray;
+    }
+    h2{
+        font-size: 10vw;
+    }
+    label, input[type = submit]{
+    font-size: 4.5vw;
+    }
+    input[type = text], input[type = password]{
+        height: 4.5vh;
+        font-size: 4vw;
+    }
+    img{
+        width: 80vw;
+    }
+    .img{
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
